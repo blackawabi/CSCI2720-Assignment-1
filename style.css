@@ -1,0 +1,14 @@
+header{
+    background-image: url("image/header-image.jpeg");
+    background-size: cover;
+}
+
+body{
+    background-color: #152342;
+}
+
+h1{
+    text-align: left;
+}
+
+
