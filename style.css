@@ -1,6 +1,24 @@
+/*1155136412 PAU Chun Wai*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lobster&display=swap');
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
 header{
-    background-image: url("image/header-image.jpeg");
+    background-image: url("image/header-image.jpg");
     background-size: cover;
+    font-family: 'Redressed', cursive;
+}
+
+nav{
+    font-family: 'Lobster', cursive;
 }
 
 body{
@@ -12,3 +30,18 @@ h1{
 }
 
 
+@media only screen and (max-width: 600px) {
+    #backButtonArea {
+        position: sticky; 
+        top: 90%
+    }
+
+    
+}
+@media only screen and (min-width: 601px) {
+    #backButton {
+        display:none
+    }
+
+    
+}

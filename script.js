@@ -1,5 +1,9 @@
+/*1155136412 PAU Chun Wai*/
+
 function ShowSpecial(){
-    document.getElementById('Special').style.display='flex';
+    if (document.getElementById('Special').style.display=='none')
+        document.getElementById('Special').style.display='flex';
+    else document.getElementById('Special').style.display='none'
 }
 
 function ChangeAlign(){
@@ -32,7 +36,7 @@ function AddHobby(){
         div.appendChild(node);
 
 
-        document.querySelectorAll("div")[4].appendChild(div);
+        document.querySelectorAll("div")[5].appendChild(div);
     }
     
 }
@@ -163,6 +167,7 @@ function LoadComment(){
             PrintComment(oldComment[i].email,oldComment[i].comment,oldComment[i].color);
         }
     });
+    
 }
 
 
@@ -185,7 +190,7 @@ function SaveComment(){
         headers: new Headers({
             'Content-Type': 'application/json'
         }),
-        body: JSON.stringify(data),
+        body: JSON.stringify(data,null, "\t"),
     }).then(response => console.log(response))
     .then(data => {
         console.log('Success:', data);
